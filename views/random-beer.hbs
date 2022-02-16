@@ -1,13 +1,10 @@
 <h1>Your random beer is..... :</h1>
 
-{{#each responseFromApi}}
 <li>
-    <img src="{{image_url}}" alt="theBeer" width="50px">
-    <p>{{name}}</p> 
-    <p>{{description}}</p>
-    <p>{{tagline}}</p>
-    <p>{{food_pairing}}</p>
-    <p>{{brewers_tips}}</p>
+    <img src="{{responseFromAPI.0.image_url}}" alt="theBeer" width="50px">
+    <p>{{responseFromAPI.0.name}}</p> 
+    <p>{{responseFromAPI.0.description}}</p>
+    <p>{{responseFromAPI.0.tagline}}</p>
+    <p>{{responseFromAPI.0.food_pairing}}</p>
+    <p>{{responseFromAPI.0.brewers_tips}}</p>
 </li>
-
-{{/each}}
